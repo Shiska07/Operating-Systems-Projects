@@ -12,3 +12,15 @@ Problem statement(s):
 4. To be fair to both classes the professor is only allowed to help 5 consequtive students from the same section (unless no student from the other section is waiting).
 5. The professor will take a break after helping 10 students.
 6. No student should be waiting outside if he/she meets the requirement to enter. (i.e. No thread starvation)
+
+The program expects an input file containing information for students where each line has 3 numbers. For example:
+1 0 2
+0 0 7
+1 0 5
+
+The first number refers to the students section (0:A 1:B). The second number specifies the time in seconds between the arrival of the current student and the previous student.
+The third number specifies the amount of time(in seconds) the student spends asking questions.
+
+The program can be compiled in the following way:
+gcc officehours.c -o officehours -lpthread
+./officehours <testfile.txt>
