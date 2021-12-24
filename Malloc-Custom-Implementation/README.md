@@ -5,9 +5,9 @@ Blocks that are larger than requested memory are split to avoid ***internal frag
 
 Four implementations of malloc are avaialble using four .so files:
 
-1. First Fit (libmalloc-ff.so)\
-2. Next Fit (libmalloc-nf.so)\
-3. Best Fit (libmalloc-bf.so)\
+1. First Fit (libmalloc-ff.so)
+2. Next Fit (libmalloc-nf.so)
+3. Best Fit (libmalloc-bf.so)
 4. Worst Fit (libmalloc-wf.so)
 
 The .so have to be used to override the system's default malloc function. Test files in C are provided in the /tests folder that call malloc and free.
