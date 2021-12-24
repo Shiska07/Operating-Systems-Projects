@@ -1,7 +1,7 @@
 # Malloc-Custom-Implementation
 
 This program demonstrates heap memory management by custom implementation of malloc and free. The heap is implemented as a doubly linked list.
-Blocks that are larger than requested memory are split to avoid ***internal fragmentation*** whereas adjacent free blockes are combined to a single large block to avoid ***external fragmentation***.\
+Blocks that are larger than requested memory are split to avoid ***internal fragmentation*** whereas adjacent free blockes are combined to a single large block to avoid ***external fragmentation***.
 
 Four implementations of malloc are avaialble using four .so files:
 
@@ -14,4 +14,4 @@ The .so have to be used to override the system's default malloc function. Test f
 
 ***The code can be complied in the following way:\
 $ make\
-$ env LD_PRELOAD=lib/libmalloc-ff.so tests/<testfile>***
+$ env LD_PRELOAD=lib/libmalloc-ff.so tests/test1***
